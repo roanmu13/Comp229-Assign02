@@ -1,0 +1,71 @@
+﻿/*Name: Rosa Munguia
+  Student Number: 300735300
+  Date: October 6 2017
+  Professor: Mark McDonnell
+*/
+/*Master Page Styles*/
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 16px;
+}
+
+header {
+    margin-left: 220px;
+}
+
+h2 {
+    margin-left: 150px;
+}
+
+#nav {
+    float: left;
+    max-width: 260px;
+    border-right: 1px solid red;
+}
+
+    #nav ul {
+        list-style-type: none;
+        padding: 40px;
+    }
+
+
+li a {
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    padding-left: 20px;
+    border-bottom: 1px solid black;
+}
+
+    li a:hover {
+    }
+
+    li a.active {
+        background-color: darkmagenta;
+        color: ivory;
+    }
+
+#logo {
+    height: 150px;
+    width: 250px;
+}
+
+article {
+    margin-left: 170px;
+}
+/*Home Page Styles*/
+#surveyInfo {
+    padding-left: 220px;
+    width: 800px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+footer {
+    margin-left: 220px;
+}
