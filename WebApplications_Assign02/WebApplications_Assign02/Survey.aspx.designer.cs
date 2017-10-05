@@ -13,13 +13,13 @@ namespace WebApplications_Assign02 {
     public partial class Survey {
         
         /// <summary>
-        /// fName control.
+        /// fNameTextbox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox fName;
+        protected global::System.Web.UI.WebControls.TextBox fNameTextbox;
         
         /// <summary>
         /// fName_RequiredValidator control.
@@ -31,13 +31,13 @@ namespace WebApplications_Assign02 {
         protected global::System.Web.UI.WebControls.RequiredFieldValidator fName_RequiredValidator;
         
         /// <summary>
-        /// lName control.
+        /// lNameTextbox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox lName;
+        protected global::System.Web.UI.WebControls.TextBox lNameTextbox;
         
         /// <summary>
         /// lName_RequiredValidator control.
@@ -49,13 +49,31 @@ namespace WebApplications_Assign02 {
         protected global::System.Web.UI.WebControls.RequiredFieldValidator lName_RequiredValidator;
         
         /// <summary>
-        /// e control.
+        /// emailTextbox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox e;
+        protected global::System.Web.UI.WebControls.TextBox emailTextbox;
+        
+        /// <summary>
+        /// email_RequiredValidator control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator email_RequiredValidator;
+        
+        /// <summary>
+        /// RegularExpressionValidator1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator1;
         
         /// <summary>
         /// week control.

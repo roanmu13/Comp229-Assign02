@@ -14,7 +14,7 @@
             width: 340px;
             height: 143px;
         }
-    </style>    <link rel="stylesheet" href="Styles.css" />
+    </style>    <link rel="stylesheet" href="Styles.css" type="text/css" />
 </head>
 <body>
     <form runat="server">

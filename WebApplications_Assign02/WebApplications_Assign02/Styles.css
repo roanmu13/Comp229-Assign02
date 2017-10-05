@@ -69,3 +69,14 @@ a {
 footer {
     margin-left: 220px;
 }
+
+/*Survey Styles*/
+
+fieldset {
+    width: 600px;
+    padding-left: 10px;
+    background-color: rgba(99, 199, 233, 0.4);
+}
+#survey{
+    padding-left:200px;
+}

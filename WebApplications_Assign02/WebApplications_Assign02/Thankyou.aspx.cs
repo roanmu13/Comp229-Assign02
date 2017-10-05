@@ -7,18 +7,11 @@ using System.Web.UI.WebControls;
 
 namespace WebApplications_Assign02
 {
-    public partial class Survey : System.Web.UI.Page
+    public partial class Thankyou : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
 
         }
-
-        protected void submitButton_Click(object sender, EventArgs e)
-        {
-           
-        }
-
-      
     }
 }

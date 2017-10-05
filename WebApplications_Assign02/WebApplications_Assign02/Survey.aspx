@@ -1,26 +1,32 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Survey.aspx.cs" Inherits="WebApplications_Assign02.Survey" %>
 
-<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-</asp:Content>
+
 <asp:Content ID="Content2" ContentPlaceHolderID="Content" runat="server">
-    <fieldset><legend>Personal Information</legend><table>
+   <div id="survey"> <fieldset><legend>Personal Information</legend><table>
        <tr>
         <td>First Name:</td>
-          <td><asp:TextBox ID="fName" runat="server"></asp:TextBox>
-              <asp:RequiredFieldValidator ID="fName_RequiredValidator" ControlToValidate="fName"
+          <td><asp:TextBox ID="fNameTextbox" runat="server"></asp:TextBox>
+              <asp:RequiredFieldValidator ID="fName_RequiredValidator" ValidationGroup="wholeSurvey" ControlToValidate="fNameTextbox"
                   Display="Dynamic" runat="server" ErrorMessage="First name is required"></asp:RequiredFieldValidator>
           </td>
        </tr> 
          <tr>
         <td>Last Name:</td>
-             <td><asp:TextBox ID="lName" runat="server"></asp:TextBox>
-                 <asp:RequiredFieldValidator ID="lName_RequiredValidator" ControlToValidate="lName"
+             <td><asp:TextBox ID="lNameTextbox" runat="server"></asp:TextBox>
+                 <asp:RequiredFieldValidator ID="lName_RequiredValidator" ValidationGroup="wholeSurvey" ControlToValidate="lNameTextbox"
                   Display="Dynamic" runat="server" ErrorMessage="Last name is required"></asp:RequiredFieldValidator>
              </td>
        </tr> 
          <tr>
         <td>Email:</td>
-             <td><asp:TextBox ID="e" runat="server"></asp:TextBox></td>
+             <td><asp:TextBox ID="emailTextbox" runat="server"></asp:TextBox>  
+                 <asp:RequiredFieldValidator ID="email_RequiredValidator" ValidationGroup="wholeSurvey" ControlToValidate="emailTextbox"
+                  Display="Dynamic" runat="server" ErrorMessage="Email address is required"></asp:RequiredFieldValidator>
+                 <asp:RegularExpressionValidator ID="RegularExpressionValidator1" ValidationGroup="wholeSurvey" ControlToValidate="emailTextbox" runat="server" 
+                  Display="Dynamic"  ValidationExpression="^\S+@\S+\.\S+$" ErrorMessage="Email address must be in format mymail@gmail.com">
+
+                 </asp:RegularExpressionValidator>
+             </td>
        </tr> 
          <tr>
         <td>What type of user are you?</td>
@@ -36,9 +42,9 @@
         <table>
         <tr>
             <td>How often do you visit The Coding Channel?</td></tr>
-          <tr><td><asp:RadioButton ID="week" runat="server" />3 or more times per week<br />
-        <asp:RadioButton ID="month" runat="server" />3 or more times per month<br />
-        <asp:RadioButton ID="year" runat="server" />A few times per year</td>
+          <tr><td><asp:RadioButton ID="week" runat="server" GroupName="Visit" />3 or more times per week<br />
+        <asp:RadioButton ID="month" runat="server" GroupName="Visit" />3 or more times per month<br />
+        <asp:RadioButton ID="year" runat="server" GroupName="Visit" />A few times per year</td>
         </tr>
             <tr><td>What is your primary use of the website?</td></tr>
          <tr><td><select><option>To get help with questions I may have</option>
@@ -55,19 +61,21 @@
             </tr>
             <tr>
                 <td>How would you rate your overall experience with The Coding Channel?</td></tr>
-              <tr> <td>  <asp:RadioButton ID="great" runat="server" />Great!<br />
-        <asp:RadioButton ID="good" runat="server" />Good<br />
-        <asp:RadioButton ID="Satisfactory" runat="server" />Satisfactory <br />  
-        <asp:RadioButton ID="notGreat" runat="server" />Not that great<br />
-        <asp:RadioButton ID="Bad" runat="server" />Bad</td> 
+              <tr> <td>  <asp:RadioButton ID="great" GroupName="Experience" runat="server" Text="Great!" /><br />
+        <asp:RadioButton ID="good" GroupName="Experience" runat="server" Text="Good"/><br />
+        <asp:RadioButton ID="Satisfactory" GroupName="Experience" runat="server" Text="Satisfactory"/> <br />  
+        <asp:RadioButton ID="notGreat" GroupName="Experience" runat="server" Text="Not that great" /><br />
+        <asp:RadioButton ID="Bad" GroupName="Experience" runat="server" Text="Bad" /></td> 
             </tr>
             <tr>
                 <td>Please let us know if you have any comments that can help us improve:</td></tr>
              <tr>  <td><asp:TextBox id="commentBox" TextMode="MultiLine" runat="server" Columns="30" Rows="4"> </asp:TextBox></td>
             </tr>
-            <tr><td><asp:Button ID="submitButton" runat="server" Text="Submit" /></td></tr>
+            <tr><td><asp:Button ID="submitButton" runat="server" Text="Submit"  OnClick="submitButton_Click" />
+                
+                </td></tr>
     </table>
        
         
-    </fieldset>
+    </fieldset></div>
 </asp:Content>
