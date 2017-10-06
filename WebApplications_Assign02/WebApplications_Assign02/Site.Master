@@ -23,9 +23,9 @@
             </h1></div>
         <div id="nav"><img id="logo" alt="Coding Channel Logo" class="auto-style1" src="Images/CodingChannelLogo.PNG" />
         <ul>
-            <li><a href="~/HomePage">HOME</a></li>
-            <li><a href="~/Survey">SURVEY</a></li>
-            <li><a href="~/Contact">CONTACT</a></li>
+            <li><a runat="server" href="~/HomePage">HOME</a></li>
+            <li><a runat="server" href="~/Survey">SURVEY</a></li>
+            <li><a runat="server" href="#">CONTACT</a></li>
              <li><a href="#">FORUMS</a></li>
              </ul></></div>       
         <header><h2>Connect, Discover, Learn....Just have fun</h2>

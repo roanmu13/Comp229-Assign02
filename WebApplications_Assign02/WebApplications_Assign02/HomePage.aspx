@@ -7,7 +7,10 @@
     The survey will take approximately 5 minutes. We value and appreciate any and all feedback, so be honest, brutally honest if need be. 
     <br /><br />We want to make sure you're getting the best experience when you visit the site!!
 </p>
-    <h4>Take the survey <a href="Images/Survey-Icon.png">here<img src="Images/Survey-Icon.png" alt="survey icon"/></a></h4>
-    <!--Survey Image Source: https://yarramsc.vic.edu.au/420/survey-icon/#.WdPZd7pFxu0-->
-</div>
+    <h4>Take the survey <a href="Survey.aspx" style="color:slateblue">here<img src="Images/Survey-Icon.png" alt="survey icon"/></a></h4>
+    <%-- Survey Image Source: https://yarramsc.vic.edu.au/420/survey-icon/#.WdPZd7pFxu0 --%>
+<p><a href="https://en.wikipedia.org/wiki/Wikipedia:Survey_disclaimer" style="color:slateblue">Disclaimer</a></p>
+
+    </div>
+    
 </asp:Content>

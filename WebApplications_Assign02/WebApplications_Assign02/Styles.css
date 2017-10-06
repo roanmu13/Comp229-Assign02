@@ -39,7 +39,9 @@ li a {
     border-bottom: 1px solid black;
 }
 
-    li a:hover {
+    #nav li a:hover {
+        font-size:24px;
+        font-weight:bold;
     }
 
     li a.active {
@@ -67,8 +69,12 @@ a {
 }
 
 footer {
-    margin-left: 220px;
+    margin-left: auto;
+    margin-right:auto;
+    width:600px;
 }
+
+
 
 /*Survey Styles*/
 
@@ -79,4 +85,17 @@ fieldset {
 }
 #survey{
     padding-left:200px;
+}
+
+td{
+    padding:2px;
+}
+
+
+/*Thank-you page styles*/
+#thankYou{
+    margin-left:auto;
+    margin-right:auto;
+    padding-left:220px;
+    width:800px;
 }
