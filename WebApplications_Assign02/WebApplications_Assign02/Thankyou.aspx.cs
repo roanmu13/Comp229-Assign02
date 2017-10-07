@@ -11,7 +11,7 @@ namespace WebApplications_Assign02
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-                lblFName.InnerText = Session["FirstName"].ToString();
+               lblFName.InnerText = Session["FirstName"].ToString();
            
                 lblLName.InnerText = Session["LastName"].ToString();
             email.InnerText = Session["Email"].ToString();

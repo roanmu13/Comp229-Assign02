@@ -17,24 +17,32 @@ namespace WebApplications_Assign02
 
         public void submitButton_Click(object sender, EventArgs e)
         {
+            
             Session["FirstName"] = fNameTextbox.Text.ToString();
             Session["LastName"] = lNameTextbox.Text.ToString();
             Session["Email"] = emailTextbox.Text.ToString();
             Session["visit"] = visitGroup.SelectedItem.Text.ToString();
+          
             Session["use"] = siteUse.SelectedItem.Text.ToString();
             Session["lang"] = languages.SelectedItem.Text.ToString();
             Session["uType"] = userType.SelectedItem.Text.ToString();
             Session["rating"] = experience.SelectedItem.Text.ToString();
             Session["comments"] = commentBox.Text.ToString();                
 
-            if (Page.IsValid)
+            if (Page.IsValid==true)
             {
-                Response.Redirect("Thankyou.aspx");
-               
+                Response.Redirect("Thankyou.aspx");  
+            }
+            else 
+            {
+                submitButton.Text = "Please fill out all fields";
             }
          
         }
 
-      
+        protected void visitGroup_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

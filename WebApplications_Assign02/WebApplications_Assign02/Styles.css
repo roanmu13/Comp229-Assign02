@@ -89,7 +89,7 @@ footer {
 fieldset {
     width: 600px;
     padding-left: 10px;
-    background-color: rgba(99, 199, 233, 0.4);
+    background-color: rgba(51, 108, 153, 0.4);
 }
 #survey{
     padding-left:150px;
@@ -100,9 +100,10 @@ td{
 }
 
 
+
 /*Thank-you page styles*/
-#thankYou{
-    margin-left:200px;
+#thankyou{
+    margin-left:150px;
     
     width:800px;
 }
@@ -120,3 +121,4 @@ table{
 #tyBanner{
     border-radius:50%;
 }
+

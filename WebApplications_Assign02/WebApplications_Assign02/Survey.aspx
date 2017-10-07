@@ -1,5 +1,8 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Survey.aspx.cs" Inherits="WebApplications_Assign02.Survey" %>
-
+<%-- Name: Rosa Munguia
+  Student Number: 300735300
+  Date: October 6 2017
+  Professor: Mark McDonnell--%>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="Content" runat="server">
     <div id="survey"> <fieldset><legend>Personal Information</legend><table>
@@ -7,23 +10,23 @@
         <td>First Name:</td>
           <td><asp:TextBox ID="fNameTextbox" runat="server"></asp:TextBox>
               <asp:RequiredFieldValidator ID="fName_RequiredValidator"  ControlToValidate="fNameTextbox"
-                  Display="Dynamic" runat="server" ErrorMessage="First name is required" ></asp:RequiredFieldValidator>
+              style="color:red"   Display="Dynamic" runat="server" ErrorMessage="First name is required" ></asp:RequiredFieldValidator>
           </td>
        </tr> 
          <tr>
         <td>Last Name:</td>
              <td><asp:TextBox ID="lNameTextbox" runat="server"></asp:TextBox>
                  <asp:RequiredFieldValidator ID="lName_RequiredValidator" ControlToValidate="lNameTextbox"
-                  Display="Dynamic" runat="server" ErrorMessage="Last name is required" ></asp:RequiredFieldValidator>
+               style="color:red"  Display="Dynamic" runat="server" ErrorMessage="Last name is required" ></asp:RequiredFieldValidator>
              </td>
        </tr> 
          <tr>
         <td>Email:</td>
              <td><asp:TextBox ID="emailTextbox" placeholder="myemail@outlook.com" runat="server"></asp:TextBox>  
                  <asp:RequiredFieldValidator ID="email_RequiredValidator" runat="server" ControlToValidate="emailTextbox"
-                  Display="Dynamic"  ErrorMessage="Email address is required"></asp:RequiredFieldValidator>
+               style="color:red" Display="Dynamic"  ErrorMessage="Email address is required"></asp:RequiredFieldValidator>
                  <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="emailTextbox" 
-                  Display="Dynamic" ValidationExpression="^\S+@\S+\.\S+$" ErrorMessage="Email address must be in format mymail@gmail.com">
+                 Display="Dynamic" ValidationExpression="^\S+@\S+\.\S+$" ErrorMessage="Email address must be in format mymail@gmail.com">
 
                  </asp:RegularExpressionValidator>
              </td>
@@ -46,11 +49,13 @@
         <tr>
             <td>How often do you visit The Coding Channel?</td></tr>
           <tr><td>
-              <asp:RadioButtonList ID="visitGroup" runat="server">
+              <asp:RadioButtonList ID="visitGroup" runat="server" OnSelectedIndexChanged="visitGroup_SelectedIndexChanged">
                   <asp:ListItem Value="3 or more times per week"></asp:ListItem>
              <asp:ListItem Value="3 or more times per month"></asp:ListItem>
              <asp:ListItem Value="A few times per year"></asp:ListItem>     
               </asp:RadioButtonList>
+             <asp:RequiredFieldValidator runat="server" ID="visitReq" Display="Dynamic" ErrorMessage="Please choose an option"
+              style="color:red"  ControlToValidate="visitGroup"></asp:RequiredFieldValidator>
               
               
          </tr>
@@ -90,6 +95,8 @@
                   <asp:ListItem Text="Not that great"></asp:ListItem>   
                   <asp:ListItem Text="Bad" ></asp:ListItem>   
               </asp:RadioButtonList>
+                  <asp:RequiredFieldValidator runat="server" ID="experienceReq" Display="Dynamic" ErrorMessage="Please choose an option"
+              style="color:red"  ControlToValidate="experience"></asp:RequiredFieldValidator>
 
      </td> 
             </tr>

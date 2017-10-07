@@ -94,6 +94,15 @@ namespace WebApplications_Assign02 {
         protected global::System.Web.UI.WebControls.RadioButtonList visitGroup;
         
         /// <summary>
+        /// visitReq control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator visitReq;
+        
+        /// <summary>
         /// siteUse control.
         /// </summary>
         /// <remarks>
@@ -119,6 +128,15 @@ namespace WebApplications_Assign02 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RadioButtonList experience;
+        
+        /// <summary>
+        /// experienceReq control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator experienceReq;
         
         /// <summary>
         /// commentBox control.

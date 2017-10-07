@@ -142,10 +142,8 @@
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="HomePage.aspx" />
     <Content Include="Images\bgbeige.jpg" />
-    <Content Include="Images\bgtur.png" />
     <Content Include="Images\CodingChannelLogo.PNG" />
     <Content Include="Images\Survey-Icon.png" />
-    <Content Include="Images\thank-you-banner.jpg" />
     <Content Include="Images\thank-you.jpg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />

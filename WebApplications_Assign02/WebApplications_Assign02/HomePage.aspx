@@ -1,4 +1,9 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="HomePage.aspx.cs" Inherits="WebApplications_Assign02.HomePage" %>
+<%-- Name: Rosa Munguia
+  Student Number: 300735300
+  Date: October 6 2017
+  Professor: Mark McDonnell--%>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="Content" runat="server">
     <div id="surveyInfo"><h3>The Survey</h3>
 <p id="">Welcome to The Coding Channel. This survey is going to help provide us feedback on how we are doing here at The Coding Channel. 

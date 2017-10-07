@@ -1,10 +1,17 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Thankyou.aspx.cs" Inherits="WebApplications_Assign02.Thankyou" %>
-
+<%-- Name: Rosa Munguia
+  Student Number: 300735300
+  Date: October 6 2017
+  Professor: Mark McDonnell--%>
 <asp:Content ID="Content2" ContentPlaceHolderID="Content" runat="server">
      <div id="thankyou"> 
     <%--Photo source:
             https://www.dreamstime.com/stock-illustration-thank-you-words-different-languages-written-watercolor-paper-image58384945 --%>
     <div id="thankYouBanner"><img id="tyBanner" src="Images/thank-you.jpg" alt="thankyouBanner"/>
+        <p>Thank-you for participating in our survey. At The Coding Channel, we strive to provide our visitors
+            with the best possible experience. We value any and all feedback and hope you continue 
+            to include us in helping with your needs.
+        </p>
 <h3>Your details:</h3>
         <table id="results">
        <tr><td>Name: </td>
