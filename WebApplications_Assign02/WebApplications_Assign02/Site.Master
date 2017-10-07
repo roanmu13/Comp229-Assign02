@@ -4,8 +4,14 @@
 
 <html lang="en">
 <head runat="server">
-    <meta charset="utf-8" />
+   <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="theme-color" content="#ffffff">
 <title></title>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
@@ -14,7 +20,9 @@
             width: 340px;
             height: 143px;
         }
-    </style>    <link rel="stylesheet" href="Styles.css" type="text/css" />
+        </style>    
+        
+    <link rel="stylesheet" href="Styles.css" type="text/css" />
 </head>
 <body>
     <form runat="server">
@@ -35,7 +43,7 @@
             <asp:ContentPlaceHolder ID="Content" runat="server">
             </asp:ContentPlaceHolder>
      </article>
-        <footer>&copy;&nbsp;Copyright. Rosa Munguia | Centennial College | Web Applications</footer>
+        <footer><h5>&copy;&nbsp;Copyright. Rosa Munguia | Centennial College | Web Applications</h5></footer>
     </form>
 </body>
 </html>

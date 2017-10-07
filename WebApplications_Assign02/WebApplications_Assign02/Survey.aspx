@@ -2,7 +2,7 @@
 
 
 <asp:Content ID="Content2" ContentPlaceHolderID="Content" runat="server">
-   <div id="survey"> <fieldset><legend>Personal Information</legend><table>
+    <div id="survey"> <fieldset><legend>Personal Information</legend><table>
        <tr>
         <td>First Name:</td>
           <td><asp:TextBox ID="fNameTextbox" runat="server"></asp:TextBox>

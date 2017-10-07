@@ -3,14 +3,17 @@
   Date: October 6 2017
   Professor: Mark McDonnell
 */
-/*Master Page Styles*/
+/*Master Page Styles*//*Background image source: https://wallpapercave.com/neutral-backgrounds */
 body {
+    background-image: url('Images/bgbeige.jpg');
+    background-repeat: no-repeat;
+    background-size:100%;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 16px;
 }
 
 header {
-    margin-left: 220px;
+    margin-left: 180px;
 }
 
 h2 {
@@ -21,6 +24,7 @@ h2 {
     float: left;
     max-width: 260px;
     border-right: 1px solid red;
+    height:100%;
 }
 
     #nav ul {
@@ -55,11 +59,14 @@ li a {
 }
 
 article {
-    margin-left: 170px;
+    margin-left: auto;
+    margin-right:auto;
+    width:800px;
+
 }
 /*Home Page Styles*/
 #surveyInfo {
-    padding-left: 220px;
+    padding-left: 150px;
     width: 800px;
 }
 
@@ -72,6 +79,7 @@ footer {
     margin-left: auto;
     margin-right:auto;
     width:600px;
+    padding-top:20px;
 }
 
 
@@ -84,7 +92,7 @@ fieldset {
     background-color: rgba(99, 199, 233, 0.4);
 }
 #survey{
-    padding-left:200px;
+    padding-left:150px;
 }
 
 td{
@@ -94,8 +102,21 @@ td{
 
 /*Thank-you page styles*/
 #thankYou{
-    margin-left:auto;
-    margin-right:auto;
-    padding-left:220px;
+    margin-left:200px;
+    
     width:800px;
+}
+
+td{
+   padding:3px;
+}
+table{
+    border-collapse:collapse;
+}
+
+#results tr:nth-child(even) {
+    background-color: #82caff;
+}
+#tyBanner{
+    border-radius:50%;
 }
